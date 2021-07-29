@@ -1,3 +1,54 @@
+/*MOBILE*/
+
 .header {
   background-image: url(../images/cover.jpg);
+  background-size: cover;
+  height: 568px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__hamburger {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 44px;
+    height: 44px;
+    background-color: #0271bc;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 15px;
+  }
+  &__tittle {
+    text-align: center;
+    width: 290px;
+    height: 110px;
+    color: $color-white;
+    font-family: $font-tittle;
+    font-size: 42px;
+    font-weight: 700;
+    margin: 284px 0 15px 0;
+    text-transform: uppercase;
+  }
+
+  &__subtittle {
+    text-align: center;
+    width: 290px;
+    height: 21px;
+    color: $color-white;
+    font-family: $font-main;
+    font-size: 16px;
+  }
+  &__arrow {
+    width: 45px;
+    height: 45px;
+    background-color: $color-white;
+    text-align: center;
+    margin-top: 45px;
+    padding-top: 14px;
+    box-sizing: border-box;
+    border-radius: 50%;
+  }
 }
+
+/*TABLET*/

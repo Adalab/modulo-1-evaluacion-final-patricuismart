@@ -47,21 +47,21 @@ body {
   .section2 {
     background-color: #eff9ff;
     width: 100vw;
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    border: solid rgb(211, 109, 109);
-    .item-1 {
-      border: solid black;
-      grid-row: 1/5;
-    }
+    /* border: solid rgb(211, 109, 109);*/
+
     .reasons {
       font-size: 24px;
       font-family: $font-tittle;
       text-align: center;
       margin: 30px 15px 45px 15px;
+      /*border: solid deeppink;*/
     }
     &__article {
+      /* border: solid deeppink;*/
       .tittle {
         font-size: 18px;
         font-family: $font-tittle;

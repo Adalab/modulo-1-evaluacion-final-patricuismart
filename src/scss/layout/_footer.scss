@@ -6,10 +6,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 60px;
+  position: relative;
+
+  @media all and (min-width: 768px) {
+    flex-direction: row;
+    padding: 45px 39px;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  @media all and (min-width: 1200px) {
+    padding: 45px 370px;
+  }
 
   &__arrow {
-    position: absolute;
+    position: relative;
+    border: transparent;
     width: 45px;
     height: 45px;
     background-color: $color-white;
@@ -17,12 +28,27 @@
     padding-top: 10.5px;
     box-sizing: border-box;
     border-radius: 50%;
-    transform: translateY(-82.5px);
+    transform: translateY(-22.5px);
+    @media all and (min-width: 768px) {
+      position: absolute;
+      top: 0px;
+    }
   }
-  &__menu {
-    &--item {
-      margin-bottom: 30px;
+  &__menu1,
+  &__menu2 {
+    @media all and (min-width: 768px) {
+      width: 210px;
+      text-align: left;
+      padding-left: 30px;
+    }
 
+    @media all and (min-width: 1200px) {
+      width: 159px;
+      padding: 0px;
+    }
+    &--item1,
+    &--item2 {
+      margin-bottom: 30px;
       list-style-type: none;
       font-size: 16px;
       text-transform: uppercase;
@@ -32,9 +58,30 @@
   &__copy {
     padding-bottom: 45px;
     font-size: 14px;
+
+    @media all and (min-width: 768px) {
+      width: 210px;
+      text-align: left;
+      padding-left: 30px;
+      order: 0;
+    }
+    @media all and (min-width: 1200px) {
+      width: 159px;
+      padding: 0px;
+    }
+
     .heart {
       color: $color-orange;
       line-height: 2.14;
+    }
+  }
+
+  @media all and (min-width: 768px) {
+    .order1 {
+      order: 1;
+    }
+    .order2 {
+      order: 2;
     }
   }
 }

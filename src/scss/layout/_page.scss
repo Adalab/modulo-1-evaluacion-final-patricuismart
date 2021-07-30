@@ -5,6 +5,12 @@ body {
   .section1 {
     background-color: $color-white;
     margin: 30px 15px 45px 15px;
+    @media all and (min-width: 768px) {
+      margin: 30px 39px 60px;
+    }
+    @media all and (min-width: 1200px) {
+      margin: 60px 275px;
+    }
 
     &__small {
       font-size: 14px;
@@ -44,34 +50,44 @@ body {
   }
   .section2 {
     background-color: #eff9ff;
-    /*width: 100vw;
-    height: 100vh;*/
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    /* border: solid rgb(211, 109, 109);*/
-
+    grid-template-rows: 1fr;
+    @media all and (min-width: 768px) {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 30% 1fr 30%;
+    }
     .reasons {
       font-size: 24px;
       font-family: $font-tittle;
       text-align: center;
       margin: 30px 15px 45px 15px;
-      /*border: solid deeppink;*/
+      @media all and (min-width: 768px) {
+        grid-column: 1/4;
+        line-height: 1.73;
+      }
     }
     &__article {
-      /* border: solid deeppink;*/
       .tittle {
         font-size: 18px;
         font-family: $font-tittle;
         font-weight: 700;
         text-align: center;
         line-height: 1.67;
+        @media all and (min-width: 768px) {
+          line-height: 1.25;
+          margin-top: 45px;
+        }
       }
       .text {
         font-size: 18px;
         text-align: center;
         margin: 0 70px 45px;
         line-height: 1.67;
+        @media all and (min-width: 768px) {
+          line-height: 1.5;
+          margin: 0 0 60px 0;
+        }
       }
     }
     &__button--more {
@@ -83,8 +99,13 @@ body {
       font-size: 20px;
       font-family: $font-main;
       text-align: center;
-      margin: auto;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 60px;
       transition: transform 0.3s ease-out;
+      @media all and (min-width: 768px) {
+        grid-column: 1/4;
+      }
     }
     &__button--more:hover {
       transform: scale(1.1);

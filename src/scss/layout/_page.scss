@@ -66,6 +66,33 @@ body {
       color: $color-white;
     }
   }
+  .section3 {
+    width: 100vw;
+    background-color: #304268;
+    color: $color-white;
+    @media all and (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+      justify-content: center;
+    }
+    .tittle {
+      border: solid yellow;
+      font-size: 36px;
+      text-align: center;
+      padding: 15px;
+      width: 100vw;
+    }
+    .subtittle {
+      border: solid yellow;
+      font-size: 24px;
+      text-align: center;
+      padding: 15px 0 15px 0;
+      width: 40%;
+      margin: 0 15px 0 15px;
+    }
+  }
   .section2 {
     background-color: #eff9ff;
     display: grid;
